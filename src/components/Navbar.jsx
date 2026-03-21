@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import solitaireLogo from '../assets/img/sollitare_logo.svg';
-import whiteLogo from '../assets/img/eternity-logo-white.svg';
+import imperiaLogo from '../assets/img/imperia_logo.svg';
+
 import EnquiryModal from './EnquiryModal';
 
 const Navbar = () => {
@@ -21,10 +21,10 @@ const Navbar = () => {
     <nav className={`fixed w-full z-50 transition-all duration-500 ${isScrolled ? 'bg-white py-3 shadow-sm' : 'bg-white md:bg-transparent py-3 md:py-4 shadow-sm md:shadow-none'}`}>
       <div className="lux-container flex justify-between items-center">
         {/* Logo */}
-        <Link to="/" className={`transition-all duration-500 ${isScrolled ? 'w-32 md:w-44' : 'w-40 md:w-56'}`}>
+        <Link to="/" className={`transition-all duration-500 ${isScrolled ? 'w-40 md:w-56' : 'w-48 md:w-72'}`}>
           <img
-            src={solitaireLogo}
-            alt="Solitaire Logo"
+            src={imperiaLogo}
+            alt="Radiance Imperia Logo"
             className="w-full transition-all duration-500 object-contain"
           />
         </Link>

@@ -9,48 +9,44 @@ const ProjectHighlights = () => {
 
     const amenities = [
         {
-            title: "On Main Road Project",
+            title: "3-6 Car Parking Slots Included",
             icon: (
                 <svg className="w-10 h-10 lg:w-12 lg:h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M8 21L5 3h14l-3 18H8z"/>
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M12 7v2m0 4v2"/>
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M2 21h20"/>
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M4 17c2-1 4-1.5 8-1.5s6 .5 8 1.5"/>
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M19 17h2a1 1 0 001-1v-5a2 2 0 00-2-2H5a2 2 0 00-2 2v5a1 1 0 001 1h2m2 0h6m-2 2H8m10-2l-2 2m4-2l-2 2" />
+                    <circle cx="7" cy="17" r="2" strokeWidth="1" />
+                    <circle cx="17" cy="17" r="2" strokeWidth="1" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M7 11V7l5-2 5 2v4" />
                 </svg>
             )
         },
         {
-            title: "Ultra-Luxury Living",
+            title: "8 ft Luxury Doors & Branded Fittings",
             icon: (
                 <svg className="w-10 h-10 lg:w-12 lg:h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M3 9.75L12 3l9 6.75V21H3V9.75z"/>
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M9 21V12h6v9"/>
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M12 3l1.5 1.5M12 3l-1.5 1.5"/>
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M6 13h2m8 0h2M6 16h2m8 0h2"/>
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M3 12V21h12V3H3v9z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M9 12h1M9 15h1M9 18h1" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M15 3h6v18h-6V3z" />
+                    <circle cx="12" cy="12" r="1" fill="currentColor" />
                 </svg>
             )
         },
         {
-            title: "Panoramic Skyline View",
+            title: "Premium Sports & Large Pool",
             icon: (
                 <svg className="w-10 h-10 lg:w-12 lg:h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M2 20h20"/>
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M4 20V10l4-4 4 4V8l4-4 4 4v12"/>
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M10 20v-5h4v5"/>
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M2 12a10 10 0 0 1 20 0" opacity="0.4"/>
-                    <circle cx="12" cy="6" r="1.2" strokeWidth="1" fill="currentColor"/>
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M9 10l5 5m0-5l-5 5" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M15 10l-5 5M10 10l5 5" opacity="0.4" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M8 8l8 8M16 8l-8 8" />
                 </svg>
             )
         },
         {
-            title: "100% Vastu Compliant",
+            title: "Private Home Theatre Room",
             icon: (
                 <svg className="w-10 h-10 lg:w-12 lg:h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <circle cx="12" cy="12" r="9" strokeWidth="1"/>
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M12 3v18M3 12h18"/>
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M12 3l2.5 2.5M12 3l-2.5 2.5M12 21l2.5-2.5M12 21l-2.5-2.5"/>
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M9 9l6 6m0-6l-6 6" opacity="0.5"/>
-                    <circle cx="12" cy="12" r="2" strokeWidth="1"/>
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M7 4h10M7 20h10M5 4c-1 0-2 1-2 2v12c0 1 1 2 2 2h14c1 0 2-1 2-2V6c0-1-1-2-2-2H5z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M9 10l5 2-5 2V10z" />
                 </svg>
             )
         },

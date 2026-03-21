@@ -22,8 +22,8 @@ const ThankYou = () => {
 
     const handleDownload = async (e) => {
         e.preventDefault();
-        const pdfUrl = "https://www.radiancerealty.in/images/pdf/radiance_eternity_brochure.pdf";
-        const fileName = "radiance_eternity_brochure.pdf";
+        const pdfUrl = "https://www.radiancerealty.in/images/pdf/radiance_imperia_brochure.pdf";
+        const fileName = "radiance_imperia_brochure.pdf";
 
         try {
             const response = await fetch(pdfUrl);
@@ -96,7 +96,7 @@ const ThankYou = () => {
 
                         {/* Walkthrough */}
                         <a 
-                            href="https://www.youtube.com/watch?v=UsH3AaVKHno&t=11s" 
+                            href="https://www.youtube.com/watch?v=2jbUCdeOF2g&t=72s" 
                             target="_blank" 
                             rel="noopener noreferrer"
                             className="group bg-[#f8f5f0] p-8 rounded-sm border border-gray-100 transition-all duration-500 hover:bg-[#9b7a44] hover:-translate-y-2 cursor-pointer shadow-sm flex flex-col items-center no-underline"

@@ -41,96 +41,87 @@ const AboutUs = () => {
     const zoomImg = 1.1 + scrollProgress * 0.15; // Base scale for the "window" effect
 
     return (
-        <section id="about" ref={sectionRef} className="section-padding py-24 bg-white overflow-hidden">
-            <div className="lux-container max-w-7xl mx-auto px-6 lg:px-12">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 lg:gap-32 items-center">
+        <section id="about" ref={sectionRef} className="py-24 bg-white relative overflow-hidden">
+            <div className="lux-container max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+                
+                <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
                     
-                    {/* Left Column: Overlapping Images (Uniform Size Model) */}
-                    <div className="relative order-2 lg:order-1 flex justify-center lg:block">
-                        <div className="relative w-full max-w-[550px] h-[700px] md:h-[750px]">
-                            {/* Decorative Gold Frame (Aligned to Uniform Size) */}
-                            <div className="absolute top-[30px] right-[40px] w-[325px] h-[580px] border-[2px] border-gold/40 z-0"></div>
-                            
-                            {/* Back Image (Top-Left Window) - Uniform size */}
-                            <div className="absolute top-[20px] left-[20px] w-[325px] h-[580px] overflow-hidden shadow-2xl z-10 animate-fade-up">
-                                <img 
-                                    src={about2} 
-                                    alt="Solitaire Building Exterior" 
-                                    className="w-full h-full object-cover grayscale-[0.1] transition-transform duration-500 ease-out will-change-transform"
-                                    style={{ 
-                                        transform: `scale(${zoomImg + 0.2}) translate(${innerMoveX_Back}px, ${innerMoveY_Back}px)` 
-                                    }}
-                                />
+                    {/* Left Side: Images & Floating Element */}
+                    <div className="w-full lg:w-1/2 relative animate-fade-up">
+                        
+                        {/* Main Image Container - Fixed Background Parallax */}
+                        <div className="relative w-11/12 md:w-[85%] aspect-[3/4] overflow-hidden rounded-[30px] shadow-[0_20px_50px_rgba(0,0,0,0.1)] z-10">
+                            <div 
+                                className="w-full h-full bg-cover bg-center bg-fixed bg-no-repeat transition-transform duration-[3s] hover:scale-105"
+                                style={{ backgroundImage: `url(${about2})` }}
+                                title="Moonlit Inspired Facade"
+                            ></div>
+                        </div>
+
+                        {/* Top-Right Overlapping Image - Fixed Background Parallax */}
+                        <div className="absolute -top-10 md:-top-16 -right-4 md:-right-8 w-[45%] aspect-[4/3] rounded-[20px] shadow-[0_30px_60px_rgba(0,0,0,0.15)] z-20 border-[8px] md:border-[12px] border-white overflow-hidden animate-fade-up animate-delay-2 hidden sm:block">
+                            <div 
+                                className="w-full h-full bg-cover bg-center bg-fixed bg-no-repeat transition-transform duration-[3s] hover:scale-105"
+                                style={{ backgroundImage: `url(${about1})` }}
+                                title="Moonlit Details"
+                            ></div>
+                        </div>
+
+                        {/* Bottom-Left Floating Badge */}
+                        <div className="absolute -bottom-6 md:-bottom-10 -left-4 md:-left-8 bg-white p-6 md:p-8 rounded-[20px] shadow-[0_20px_40px_rgba(0,0,0,0.12)] z-30 flex items-center gap-4 animate-fade-up animate-delay-1 border border-gray-50">
+                            <div className="w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center shrink-0">
+                                <svg className="w-6 h-6 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
                             </div>
-                            
-                            {/* Front Image (Bottom-Right Window) - Uniform size */}
-                            <div className="absolute top-[100px] left-[160px] w-[325px] h-[580px] overflow-hidden shadow-[0_30px_60px_rgba(0,0,0,0.2)] z-20 border-[12px] border-white bg-white animate-fade-up animate-delay-1">
-                                <img 
-                                    src={about1} 
-                                    alt="Luxury Interior" 
-                                    className="w-full h-full object-cover transition-transform duration-500 ease-out font-bold will-change-transform"
-                                    style={{ 
-                                        transform: `scale(${zoomImg + 0.25}) translate(${innerMoveX_Front}px, ${innerMoveY_Front}px)` 
-                                    }}
-                                />
+                            <div>
+                                <p className="font-heading text-3xl text-luxury-black leading-none mb-1">8.17<span className="text-xl">+</span></p>
+                                <p className="font-body text-[13px] text-gray-500 whitespace-nowrap">Acres of Luxury</p>
                             </div>
                         </div>
+
                     </div>
 
-                    {/* Right Column: Structured Text content (Reduced Sizing) */}
-                    <div className="order-1 lg:order-2 animate-fade-up">
-                        <span className="font-condensed text-gold uppercase tracking-[0.3em] text-[13px] mb-3 block">
-                            ABOUT RADIANCE SOLITAIRE
-                        </span>
+                    {/* Right Side: Typography & Content */}
+                    <div className="w-full lg:w-1/2 pt-16 lg:pt-0 animate-fade-up animate-delay-1">
                         
-                        <h2 className="text-[32px] md:text-[40px] font-heading mb-5 leading-[1.2] text-luxury-black">
-                            Timeless Elegance, <br /> <span className="text-gold italic">Refined Living</span>
+                        {/* Subtitle with Moonlit styling */}
+                        <div className="flex items-center gap-3 mb-6">
+                            <svg className="w-5 h-5 text-gold" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0l2 8 8 2-8 2-2 8-2-8-8-2 8-2z" />
+                            </svg>
+                            <span className="w-10 h-[1px] bg-gold"></span>
+                            <span className="font-body text-gold text-[15px] italic tracking-wide">
+                                About Us
+                            </span>
+                        </div>
+                        
+                        {/* Primary Heading */}
+                        <h2 className="text-[40px] md:text-[52px] font-heading mb-6 leading-[1.15] text-[#1e1e1e]">
+                            Welcome To Our <br className="hidden md:block"/>
+                            Imperia Luxury Villas
                         </h2>
                         
-                        <div className="mb-6">
-                            <p className="text-[19px] md:text-[21px] font-heading text-gold leading-[1.4] mb-4">
-                                Step into a world where sophistication meets thoughtful design—where every detail is crafted to perfection.
-                            </p>
-                            <p className="font-body text-[15px] text-luxury-text leading-[1.7] mb-6">
-                                Inspired by the brilliance of a solitaire, these homes offer a seamless blend of modern architecture and functional luxury. From striking exteriors to warm, well-planned interiors, every space reflects superior quality, intelligent design, and an abundance of natural light. More than just a home, it’s a statement of style, comfort, and enduring value for generations to cherish.
-                            </p>
+                        {/* Body Text */}
+                        <p className="font-body text-[16px] text-gray-500 leading-[1.8] mb-10 text-justify">
+                            Welcome to Imperia, where luxury meets comfort in the heart of Coimbatore. Since our inception, we have been dedicated to providing an exceptional lifestyle for our residents, blending modern amenities with timeless elegance. Our beautifully designed 3 to 5 BHK villas offer stunning architecture and plush accommodations, ensuring a restful retreat every single day.
+                        </p>
+
+                        <div className="flex bg-[#F9F9F9] p-4 rounded-xl border border-gray-100 mb-10 items-center gap-6 max-w-sm">
+                           <p className="font-heading text-4xl text-gold border-r border-gray-200 pr-6">80</p>
+                           <p className="font-body text-gray-600 leading-snug">Exclusive<br/>Independent Villas</p>
                         </div>
 
-                        {/* Feature List (Compact) */}
-                        <div className="space-y-3 mb-8">
-                            {[
-                                { label: "Type", value: "2, 2.5, 3 & 4 BHK Apartments & Penthouses" },
-                                { label: "Blocks", value: "A & B (G+17), C (G+14), D (Clubhouse)" },
-                                { label: "Development", value: "5.37 Acres | 660 Units" }
-                            ].map((item, idx) => (
-                                <div key={idx} className="flex items-center gap-3 group">
-                                    <div className="w-5 h-5 rounded-full bg-gold flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300">
-                                        <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" strokeWidth="3" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                                        </svg>
-                                    </div>
-                                    <p className="font-body text-[15px] text-luxury-black font-medium tracking-wide">
-                                        <span className="text-luxury-text font-normal opacity-80">{item.label}:</span> {item.value}
-                                    </p>
-                                </div>
-                            ))}
-                        </div>
-
-                        {/* CTA Buttons */}
-                        <div className="flex">
-                            <button 
-                                onClick={() => setIsModalOpen(true)} 
-                                className="bg-gold text-white font-body px-10 py-3.5 text-[13px] uppercase tracking-[0.2em] hover:bg-luxury-black transition-all duration-500 shadow-2xl hover:-translate-y-1 active:translate-y-0"
-                            >
-                                Contact Us
-                            </button>
-                        </div>
+                        {/* Call to Action - Moonlit Style Button */}
+                        <button 
+                            onClick={() => setIsModalOpen(true)}
+                            className="bg-gold px-12 py-4 text-white font-body text-[15px] font-medium rounded-full hover:bg-[#1e1e1e] hover:-translate-y-1 transition-all duration-300 shadow-xl"
+                        >
+                            Learn More
+                        </button>
                     </div>
 
                 </div>
             </div>
-
-            {/* Popup Form Modal */}
+            
             <EnquiryModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
         </section>
     );

@@ -16,10 +16,11 @@ const LocationHighlights = () => {
             img: schoolImg,
             tag: "EDUCATION",
             places: [
-                { name: "Sri Chaitanya Techno School", dist: "450 m" },
-                { name: "Dr. C. L. Metha Sishya OMR School", dist: "700 m" },
-                { name: "APL Global School", dist: "800 m" },
-                { name: "ABCD Special School", dist: "900 m" }
+                { name: "Vasavi Vidyalaya School", dist: "6.3 Km" },
+                { name: "Thavatiru Santha Lingar school", dist: "5.2 Km" },
+                { name: "Motherland School", dist: "5.0 Km" },
+                { name: "Star Kids Mont World", dist: "6.9 Km" },
+                { name: "Shirushti Vidyalaya School", dist: "6.4 Km" }
             ],
             icon: (
                 <svg className="w-12 h-12" fill="none" stroke="#9b7a44" strokeWidth="1" viewBox="0 0 24 24">
@@ -33,9 +34,9 @@ const LocationHighlights = () => {
             img: collegeImg,
             tag: "UNIVERSITY",
             places: [
-                { name: "D. B Jain College", dist: "1 km" },
-                { name: "Sathyabama University", dist: "8 kms" },
-                { name: "IIT Madras", dist: "11 kms" }
+                { name: "Government College of Technology", dist: "6.9 Km" },
+                { name: "Tamilnadu Agricultural University", dist: "5.0 Km" },
+                { name: "PSG College of Technology", dist: "13.6 Km" }
             ],
             icon: (
                 <svg className="w-12 h-12" fill="none" stroke="#9b7a44" strokeWidth="1" viewBox="0 0 24 24">
@@ -50,10 +51,10 @@ const LocationHighlights = () => {
             img: hospitalImg,
             tag: "HEALTHCARE",
             places: [
-                { name: "Mount Super Specialty Hospital", dist: "1 km" },
-                { name: "Nanthini Hospital", dist: "1.6 kms" },
-                { name: "C.M Hospital", dist: "1.9 kms" },
-                { name: "Apollo Hospital", dist: "2.8 kms" }
+                { name: "Telungupalayam Hospital", dist: "6.8 Km" },
+                { name: "Rubha Hospital", dist: "6.2 Km" },
+                { name: "Snekaram Multi Speciality Hospital", dist: "6.1 Km" },
+                { name: "Rani Hospital", dist: "6.6 Km" }
             ],
             icon: (
                 <svg className="w-12 h-12" fill="none" stroke="#9b7a44" strokeWidth="1" viewBox="0 0 24 24">

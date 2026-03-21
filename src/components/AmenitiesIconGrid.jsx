@@ -9,16 +9,7 @@ const AmenitiesIconGrid = () => {
     // 6 Premium amenities mirroring the structure
     const allAmenities = [
         {
-            title: "Multi-purpose gathering zone",
-            description: "A versatile space for community events and social interactions.",
-            icon: (
-                <svg className="w-12 h-12 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                </svg>
-            )
-        },
-        {
-            title: "Kids play area",
+            title: "Kid's Play Area",
             description: "A safe and fun environment for children to explore and play.",
             icon: (
                 <svg className="w-12 h-12 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -27,40 +18,58 @@ const AmenitiesIconGrid = () => {
             )
         },
         {
-            title: "Co-working space",
-            description: "A productive and inspiring environment to work from home effectively.",
+            title: "Open Party Lawn",
+            description: "Perfect space for hosting grand celebrations and social gatherings.",
             icon: (
                 <svg className="w-12 h-12 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
                 </svg>
             )
         },
         {
-            title: "Swimming pool",
-            description: "Relax, refresh, and unwind in our luxurious pool.",
+            title: "Open Amphitheatre",
+            description: "A grand outdoor space for performances and community events.",
+            icon: (
+                <svg className="w-12 h-12 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+                </svg>
+            )
+        },
+        {
+            title: "Outdoor Gym",
+            description: "A well-equipped outdoor fitness zone for a healthy lifestyle.",
+            icon: (
+                <svg className="w-12 h-12 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+            )
+        },
+        {
+            title: "Badminton Court",
+            description: "Indoor court designed for professional-level sports and recreation.",
+            icon: (
+                <svg className="w-12 h-12 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M9 10l5 5m0-5l-5 5" />
+                </svg>
+            )
+        },
+        {
+            title: "Home Theatre",
+            description: "Private cinematic experience within the comfort of your villa.",
+            icon: (
+                <svg className="w-12 h-12 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M7 4h10M7 20h10M5 4c-1 0-2 1-2 2v12c0 1 1 2 2 2h14c1 0 2-1 2-2V6c0-1-1-2-2-2H5z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M9 10l5 2-5 2V10z" />
+                </svg>
+            )
+        },
+        {
+            title: "Swimming Pool with Kids Pool",
+            description: "Luxurious infinity pool with a dedicated safe zone for children.",
             icon: (
                 <svg className="w-12 h-12 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M21 16.5c0 .38-.21.71-.53.88l-7.97 4.13a1 1 0 01-.98 0l-7.97-4.13a1 1 0 01-.53-.88V7.5c0-.38.21-.71.53-.88l7.97-4.13a1 1 0 01.98 0l7.97 4.13c.32.17.53.5.53.88v9z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M3.52 14.3a1 1 0 01.48-.1h16a1 1 0 01.48.1M3.52 12.3a1 1 0 01.48-.1h16a1 1 0 01.48.1M3.52 10.3a1 1 0 01.48-.1h16a1 1 0 01.48.1" />
-                </svg>
-            )
-        },
-        {
-            title: "Gymnasium",
-            description: "Stay fit with our state-of-the-art fitness equipment.",
-            icon: (
-                <svg className="w-12 h-12 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M12 4v16m0 0c-1.105 0-2-.895-2-2v-4a2 2 0 114 0v4c0 1.105-.895 2-2 2zM9 8h6m-6 4h6m-6 4h6M6 4h12M6 20h12" />
-                </svg>
-            )
-        },
-        {
-            title: "Multi-purpose play court",
-            description: "Designed for various sports activities and active living.",
-            icon: (
-                <svg className="w-12 h-12 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M3 6l3 12m0 0l3-12m-3 12h12m0 0l3-12m-3 12l-3-12" />
-                    <circle cx="12" cy="12" r="3" strokeWidth="1" />
                 </svg>
             )
         }

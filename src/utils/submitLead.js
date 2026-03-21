@@ -23,10 +23,10 @@ export const submitLead = (formData) => {
   const salesforceData = {
     firstName,
     lastName,
-    mobile: cleanMobile,
     email,
+    mobile: cleanMobile,
     source: urlParams.get('utm_source') || "Web",
-    project: "Radiance Solitaire",
+    project: "Radiance Imperia",
     subSource: urlParams.get('utm_medium') || "Google_LP_RS",
     medium: urlParams.get('utm_campaign') || "CPC", // Matches image example
     propertyType: "Apartment",
@@ -68,7 +68,7 @@ export const submitLead = (formData) => {
           fullName,
           email,
           mobile,
-          project: "Radiance Solitaire"
+          project: "Radiance Imperia"
       }),
       keepalive: true
   }).catch(err => console.error("Email Error:", err));
