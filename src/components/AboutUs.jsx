@@ -47,7 +47,7 @@ const AboutUs = () => {
                 <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
                     
                     {/* Left Side: Images & Floating Element */}
-                    <div className="w-full lg:w-1/2 relative animate-fade-up">
+                    <div className="hidden lg:block w-full lg:w-1/2 relative animate-fade-up">
                         
                         {/* Main Image Container - Fixed Background Parallax */}
                         <div className="relative w-11/12 md:w-[85%] aspect-[3/4] overflow-hidden rounded-[30px] shadow-[0_20px_50px_rgba(0,0,0,0.1)] z-10">

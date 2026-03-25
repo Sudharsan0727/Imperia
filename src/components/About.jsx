@@ -36,7 +36,7 @@ const About = () => {
           </div>
 
           {/* Image Side */}
-          <div className="relative group animate-fade-up animate-delay-1">
+          <div className="hidden lg:block relative group animate-fade-up animate-delay-1">
             <div className="absolute -inset-4 border border-gold/30 translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-500"></div>
             <div className="relative overflow-hidden">
               <img 
