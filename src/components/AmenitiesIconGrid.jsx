@@ -73,15 +73,7 @@ const AmenitiesIconGrid = () => {
                             PREMIUM <span className="text-gold italic font-normal">AMENITIES</span>
                         </h2>
                     </div>
-                    <button 
-                        onClick={() => setIsModalOpen(true)}
-                        className="btn-gold !py-2 md:!py-3 !px-6 md:!px-8 !text-[10px] md:!text-xs !shadow-none hover:shadow-lg transition-all duration-300 flex items-center gap-2"
-                    >
-                        <span>VIEW DETAILS</span>
-                        <svg className="w-3 h-3 md:w-4 md:h-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                        </svg>
-                    </button>
+
                 </div>
 
                 {/* Amenities Row */}

@@ -1,46 +1,25 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 
-import img1 from '../assets/img/Gallery/Amphitheatre Cam.jpg';
-import img2 from '../assets/img/Gallery/Bedroom Cam.jpg';
-import img3 from '../assets/img/Gallery/Creche Cam.jpg';
-import img4 from '../assets/img/Gallery/Dining Cam.jpg';
-import img5 from '../assets/img/Gallery/Entrance Cam_Eternity.jpg';
-import img6 from '../assets/img/Gallery/Entrance Lobby.jpg';
-import img7 from '../assets/img/Gallery/Gym.jpg';
-import img8 from '../assets/img/Gallery/Indoor Games.jpg';
-import img9 from '../assets/img/Gallery/Kitchen Cam.jpg';
-import img10 from '../assets/img/Gallery/Living Dining Cam.jpg';
-import img11 from '../assets/img/Gallery/Night Aerial Cam.jpg';
-import img12 from '../assets/img/Gallery/Osr 01a.jpg';
-import img13 from '../assets/img/Gallery/Pool Cam Night.jpg';
-import img14 from '../assets/img/Gallery/Road Cam Day.jpg';
-import img15 from '../assets/img/Gallery/Semi Aerial Cam.jpg';
-import img16 from '../assets/img/Gallery/Semi Aerial Day.jpg';
-import img17 from '../assets/img/Gallery/Swmming pool View_01a.jpg';
+import img1 from '../assets/img/Imperia/Aerial Day Cam.jpg';
+import img2 from '../assets/img/Imperia/Aerial Day Cam_V2.jpg';
+import img3 from '../assets/img/Imperia/Clubhouse.jpg';
+import img4 from '../assets/img/Imperia/Creche.jpg';
+import img5 from '../assets/img/Imperia/Front Cam Day.jpg';
+import img6 from '../assets/img/Imperia/Front Cam.jpg';
+import img7 from '../assets/img/Imperia/Indoor Games.jpg';
+import img8 from '../assets/img/Imperia/Night Aerial Cam.jpg';
+import img9 from '../assets/img/Imperia/Single Villa Cam.jpg';
 
 const slides = [
-    // 1. BUILDING ELEVATION
-    { id: 14, img: img14, title: "Main Approach",   tag: "ARCHITECTURE" },
-    { id: 16, img: img16, title: "Building Elevation", tag: "ARCHITECTURE" },
-    { id: 5,  img: img5,  title: "Grand Entrance",   tag: "ARCHITECTURE" },
-    { id: 11, img: img11, title: "Night Aerial View", tag: "ARCHITECTURE" },
-    { id: 15, img: img15, title: "Semi Aerial View", tag: "ARCHITECTURE" },
-
-    // 2. PROJECT INTERIORS
-    { id: 6,  img: img6,  title: "Entrance Lobby",   tag: "INTERIORS" },
-    { id: 10, img: img10, title: "Living & Dining", tag: "INTERIORS" },
-    { id: 2,  img: img2,  title: "Master Bedroom",  tag: "INTERIORS" },
-    { id: 4,  img: img4,  title: "Dining Hall",     tag: "INTERIORS" },
-    { id: 9,  img: img9,  title: "Modern Kitchen",  tag: "INTERIORS" },
-
-    // 3. AMENITIES
-    { id: 17, img: img17, title: "Infinity Pool",   tag: "AMENITIES" },
-    { id: 13, img: img13, title: "Pool Side Night", tag: "AMENITIES" },
-    { id: 1,  img: img1,  title: "Amphitheatre",     tag: "AMENITIES" },
-    { id: 7,  img: img7,  title: "Fitness Gym",      tag: "AMENITIES" },
-    { id: 3,  img: img3,  title: "Creche Area",      tag: "AMENITIES" },
-    { id: 8,  img: img8,  title: "Indoor Games",    tag: "LIFESTYLE" },
-    { id: 12, img: img12, title: "OSR Greenery",   tag: "LIFESTYLE" },
+    { id: 1, img: img1, title: "Aerial Day View", tag: "ARCHITECTURE" },
+    { id: 2, img: img2, title: "Aerial Perspective", tag: "ARCHITECTURE" },
+    { id: 3, img: img3, title: "Stunning Clubhouse", tag: "AMENITIES" },
+    { id: 4, img: img4, title: "Creche Area", tag: "AMENITIES" },
+    { id: 5, img: img5, title: "Front View Day", tag: "ARCHITECTURE" },
+    { id: 6, img: img6, title: "Front Perspective", tag: "ARCHITECTURE" },
+    { id: 7, img: img7, title: "Indoor Games Room", tag: "AMENITIES" },
+    { id: 8, img: img8, title: "Night Aerial View", tag: "ARCHITECTURE" },
+    { id: 9, img: img9, title: "Single Villa Cam", tag: "ARCHITECTURE" },
 ];
 
 const Gallery = () => {

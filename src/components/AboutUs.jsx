@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import EnquiryModal from './EnquiryModal';
-import about1 from '../assets/img/about1.jpg';
-import about2 from '../assets/img/about2.jpg';
+import about1 from '../assets/img/Imperia/Clubhouse.jpg';
+import about2 from '../assets/img/Imperia/Single Villa Cam.jpg';
 
 const AboutUs = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -54,7 +54,7 @@ const AboutUs = () => {
                             <div 
                                 className="w-full h-full bg-cover bg-center bg-fixed bg-no-repeat transition-transform duration-[3s] hover:scale-105"
                                 style={{ backgroundImage: `url(${about2})` }}
-                                title="Moonlit Inspired Facade"
+                                title="Luxury Villa Entrance"
                             ></div>
                         </div>
 
@@ -63,7 +63,7 @@ const AboutUs = () => {
                             <div 
                                 className="w-full h-full bg-cover bg-center bg-fixed bg-no-repeat transition-transform duration-[3s] hover:scale-105"
                                 style={{ backgroundImage: `url(${about1})` }}
-                                title="Moonlit Details"
+                                title="Premier Clubhouse"
                             ></div>
                         </div>
 
@@ -90,7 +90,7 @@ const AboutUs = () => {
                             </svg>
                             <span className="w-10 h-[1px] bg-gold"></span>
                             <span className="font-body text-gold text-[15px] italic tracking-wide">
-                                About Us
+                                About Radiance Imperia
                             </span>
                         </div>
                         
@@ -111,10 +111,10 @@ const AboutUs = () => {
                         </div>
 
                         {/* Call to Action - Downloads */}
-                        <div className="flex flex-row gap-2 sm:gap-4 items-center w-full">
+                        <div className="flex flex-row gap-2 sm:gap-4 items-center w-full mt-8">
                             <button 
                                 onClick={() => setIsModalOpen(true)}
-                                className="flex-1 btn-gold !font-heading !text-[9px] md:!text-[13px] !px-2 md:!px-8 !py-3 !md:!py-4 !uppercase !tracking-wider !flex !items-center !justify-center !gap-1.5 md:!gap-3 !whitespace-nowrap !shadow-lg !rounded-none"
+                                className="flex-1 btn-gold !font-heading !text-[7.5px] md:!text-[11px] !px-2 md:!px-4 !py-3 md:!py-4 !uppercase !tracking-tighter !flex !items-center !justify-center !gap-1.5 md:!gap-2 !whitespace-nowrap !shadow-lg !rounded-none"
                             >
                                 <svg className="w-5 h-5 md:w-6 md:h-6 relative z-10 shrink-0" fill="none" stroke="white" strokeWidth="2" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
@@ -123,7 +123,7 @@ const AboutUs = () => {
                             </button>
                             <button 
                                 onClick={() => setIsModalOpen(true)}
-                                className="flex-1 btn-gray !font-heading !text-[9px] md:!text-[13px] !px-2 md:!px-8 !py-3 !md:!py-4 !uppercase !tracking-wider !flex !items-center !justify-center !gap-1.5 md:!gap-3 !whitespace-nowrap !shadow-lg !rounded-none"
+                                className="flex-1 btn-gray !font-heading !text-[7.5px] md:!text-[11px] !px-2 md:!px-4 !py-3 md:!py-4 !uppercase !tracking-tighter !flex !items-center !justify-center !gap-1.5 md:!gap-2 !whitespace-nowrap !shadow-lg !rounded-none"
                             >
                                 <svg className="w-5 h-5 md:w-6 md:h-6 relative z-10 shrink-0" fill="none" stroke="white" strokeWidth="2" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />

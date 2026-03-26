@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import PhoneInputField from './PhoneInputField';
-import enquiry1 from '../assets/img/Enquiry1.jpg';
-import enquiry2 from '../assets/img/Enquiry2.jpg';
+import enquiry1 from '../assets/img/Imperia/Clubhouse.jpg';
+import enquiry2 from '../assets/img/Imperia/Single Villa Cam.jpg';
 import { submitLead } from '../utils/submitLead';
 
 import SuccessModal from './SuccessModal';
@@ -55,7 +55,7 @@ const EnquirySection = () => {
                         <div className="flex-1 h-[90%] md:h-[80%] overflow-hidden rounded-2xl shadow-lg mt-12 bg-luxury-gray animate-float">
                             <img 
                                 src={enquiry1} 
-                                alt="Luxury Interior" 
+                                alt="Imperia Clubhouse" 
                                 className="w-full h-full object-cover grayscale-[0.1] hover:grayscale-0 transition-all duration-700 hover:scale-105" 
                             />
                         </div>
@@ -64,7 +64,7 @@ const EnquirySection = () => {
                         <div className="flex-1 h-[90%] md:h-[80%] overflow-hidden rounded-2xl shadow-lg mb-12 bg-luxury-gray animate-float-delayed">
                             <img 
                                 src={enquiry2} 
-                                alt="Building Exterior" 
+                                alt="Imperia Villa" 
                                 className="w-full h-full object-cover grayscale-[0.1] hover:grayscale-0 transition-all duration-700 hover:scale-105" 
                             />
                         </div>

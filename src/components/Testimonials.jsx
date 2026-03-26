@@ -77,7 +77,7 @@ const Testimonials = () => {
                         </svg>
                         <div className="flex items-baseline gap-1.5 ml-1">
                             <span className="text-base md:text-xl text-black font-medium tracking-tight whitespace-nowrap">Google Reviews</span>
-                            <span className="text-2xl md:text-3xl font-normal text-black leading-none tracking-tight">4.7</span>
+                            <span className="text-2xl md:text-3xl font-normal text-black leading-none tracking-tight">4.4</span>
                         </div>
                         <div className="flex gap-[2px] md:gap-1 ml-2 md:ml-4 bg-[#EEF2FF] px-2 py-1.5 md:px-3 md:py-2 rounded-md items-center">
                             {/* 4 Full Stars */}
@@ -90,8 +90,8 @@ const Testimonials = () => {
                             <svg className="w-4 h-4 md:w-5 md:h-5 text-[#fbc02d]" viewBox="0 0 20 20">
                                 <defs>
                                     <linearGradient id="partialStar" x1="0%" y1="0%" x2="100%" y2="0%">
-                                        <stop offset="70%" stopColor="#fbc02d" />
-                                        <stop offset="70%" stopColor="#e5e7eb" />
+                                        <stop offset="40%" stopColor="#fbc02d" />
+                                        <stop offset="40%" stopColor="#e5e7eb" />
                                     </linearGradient>
                                 </defs>
                                 <path fill="url(#partialStar)" stroke="currentColor" strokeWidth="1" d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
