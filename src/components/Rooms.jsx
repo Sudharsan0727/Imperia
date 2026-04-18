@@ -10,11 +10,11 @@ import floorPlan3 from '../assets/img/Floor_plan/4BHK + 4T.png';
 const roomsData = [
     {
         id: 1,
-        title: "2 BHK + 2T",
+        title: "3 BHK",
         img: floorPlan1,
         price: "₹ 85 L",
         beds: "2 Bed",
-        area: "1356 Sq.ft.",
+        area: "2888 Sq.ft.",
         extraInfo: "2 Bathroom",
         extraIcon: (
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -24,11 +24,11 @@ const roomsData = [
     },
     {
         id: 2,
-        title: "3BHK + 2T",
+        title: "3.5 BHK",
         img: floorPlan2, // Using existing 3BHK image
         price: "₹ 1.25 Cr",
         beds: "3 Bed",
-        area: "1714 Sq.ft.",
+        area: "3691 Sq.ft.",
         extraInfo: "2 Bathroom",
         extraIcon: (
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -38,11 +38,11 @@ const roomsData = [
     },
     {
         id: 3,
-        title: "3BHK + 3T",
+        title: "4 BHK",
         img: floorPlan2,
         price: "₹ 1.35 Cr",
         beds: "3 Bed",
-        area: "1919 Sq.ft.",
+        area: "4651 Sq.ft.",
         extraInfo: "3 Bathroom",
         extraIcon: (
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -52,11 +52,11 @@ const roomsData = [
     },
     {
         id: 4,
-        title: "4BHK + 4T",
+        title: "5 BHK",
         img: floorPlan3,
         price: "₹ 2.15 Cr",
         beds: "4 Bed",
-        area: "2618 Sq.ft.",
+        area: "6478 Sq.ft.",
         extraInfo: "4 Bathroom",
         extraIcon: (
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -94,7 +94,7 @@ const RoomCard = ({ title, img, beds, area, extraInfo, extraIcon, price, onOpenP
                     e.stopPropagation();
                     onViewImage(img);
                 }} 
-                className="bg-white/10 backdrop-blur-md text-white border border-white/20 px-7 py-3 rounded-full uppercase tracking-[0.2em] text-[10px] font-bold pointer-events-auto hover:bg-white hover:text-luxury-black transition-all duration-300 shadow-[0_10px_30px_rgba(0,0,0,0.2)] flex items-center gap-2 w-full sm:w-auto justify-center group/btn2"
+                className="bg-white/10 backdrop-blur-md text-white border border-white/20 px-7 py-3 rounded-full uppercase tracking-[0.2em] text-[10px] font-bold pointer-events-auto hover:bg-white hover:text-luxury-black transition-all duration-300 shadow-[0_10px_30px_rgba(0,0,0,0.2)] hidden items-center gap-2 w-full sm:w-auto justify-center group/btn2"
             >
                 <svg className="w-4 h-4 transition-transform duration-300 group-hover/btn2:rotate-12" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />

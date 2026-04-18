@@ -10,19 +10,19 @@ const PricingTable = () => {
     const pricingData = [
         {
             unitType: "3 BHK Villa",
-            area: "2888 sq.ft.",
+            area: "2888 - 4671 sq.ft.",
         },
         {
             unitType: "3.5 BHK Villa",
-            area: "3691 sq.ft.",
+            area: "3691 - 4671 sq.ft.",
         },
         {
             unitType: "4 BHK Villa",
-            area: "4651 sq.ft.",
+            area: "4651 - 4661 sq.ft.",
         },
         {
             unitType: "5 BHK Villa",
-            area: "6478 sq.ft",
+            area: "6478 - 6493 sq.ft",
         }
     ];
 

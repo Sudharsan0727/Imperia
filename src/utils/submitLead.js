@@ -6,7 +6,7 @@
 import axios from 'axios';
 
 export const submitLead = (formData) => {
-  const { fullName, email, mobile } = formData;
+  const { fullName, email, mobile, project = "Radiance Imperia", interestedProject = "Radiance Imperia" } = formData;
   
   const nameParts = (fullName || '').trim().split(/\s+/);
   const firstName = nameParts[0] || '';
@@ -23,15 +23,16 @@ export const submitLead = (formData) => {
   const salesforceData = {
     firstName,
     lastName,
-    email,
     mobile: cleanMobile,
+    email,
     source: urlParams.get('utm_source') || "Web",
-    project: "Radiance Imperia",
-    subSource: urlParams.get('utm_medium') || "Google_LP_RS",
+    project: project,
+    interestedProject: interestedProject,
+    subSource: urlParams.get('utm_medium') || "Google_LP_RW",
     medium: urlParams.get('utm_campaign') || "CPC", // Matches image example
     propertyType: "Apartment",
-    city: "Chennai",
-    location: "Chennai",
+    city: "Coimbatore",
+    location: "Coimbatore",
     // All UTM Parameters as per document
     utm_adgroup: urlParams.get('utm_adgroup') || "",
     utm_adgroupid: urlParams.get('utm_adgroupid') || "",
@@ -50,7 +51,7 @@ export const submitLead = (formData) => {
     utm_source: urlParams.get('utm_source') || "",
   };
 
-  const salesforceUrl = "https://radiancerealty.my.salesforce-sites.com/LeadService/services/apexrest/createLead";
+  const salesforceUrl = "https://radiancerealty--partial.sandbox.my.salesforce-sites.com/extrenalsource/services/apexrest/createLead";
 
   // Trigger Salesforce API (Background)
   fetch(salesforceUrl, {
@@ -62,13 +63,14 @@ export const submitLead = (formData) => {
 
   // Trigger Email API (Using fetch with keepalive to ensure it finishes)
   fetch('https://radiancedevelopers.com/api/send-email', {
+  //fetch('http://localhost:5000/send-email', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
           fullName,
           email,
           mobile,
-          project: "Radiance Imperia"
+          project: project
       }),
       keepalive: true
   }).catch(err => console.error("Email Error:", err));
@@ -76,6 +78,3 @@ export const submitLead = (formData) => {
   // RETURN IMMEDIATELY so the user doesn't wait
   return Promise.resolve(true); 
 };
-
-
-
